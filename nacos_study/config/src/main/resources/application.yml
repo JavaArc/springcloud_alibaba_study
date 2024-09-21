@@ -1,0 +1,20 @@
+
+spring:
+  application:
+    name: nacos_config
+
+
+server:
+  port: 8087
+nacos:
+  config:
+    server-addr: kunge2013.top:8848
+    data-id: nacos_config
+    type: properties
+    bootstrap:
+      log-enable: true
+    namespace: dev
+
+logging:
+  level:
+    com.alibaba.nacos: debug
